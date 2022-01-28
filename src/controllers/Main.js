@@ -9,6 +9,7 @@ const mainController = {
   showLogin(req,res){
     return res.render('auth/login-cadastro')
   },
+  //Crawler feito para puxar as informações do site da docato
   crawler(req, res){
       request('https://docato.com.br/', function(error, response, body){
       if(error)throw new Error(error);
